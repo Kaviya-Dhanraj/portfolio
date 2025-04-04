@@ -28,7 +28,12 @@
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="https://drive.google.com/drive/u/0/folders/1cU61AeTaw0S7ibzz2VPhVQ2BYqHDxaf_">Resume</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/drive/u/0/folders/1cU61AeTaw0S7ibzz2VPhVQ2BYqHDxaf_"
+                >Resume</a
+              >
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -86,9 +91,13 @@
             expertise in <strong>frontend and web development</strong>.
           </p>
           <a href="#contact" class="btn">Let's Connect</a>
-          <a href="resume.pdf" download="Resume_Kaviya_Webdeveloper.pdf" class="btn btn-alt"
-            >Download Resume</a
+          <a
+            href="images/Resume_Kaviya_Webdeveloper.pdf"
+            download="Resume_Kaviya_Webdeveloper.pdf"
+            class="btn btn-alt"
           >
+            Download Resume
+          </a>
         </div>
       </div>
     </section>
@@ -315,10 +324,18 @@
             <p>kaviyadhanraj@gmail.com</p>
             <p>9597208207</p>
             <div class="socialmedia">
-              <a href="mailto:kaviyadhanraj@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-              <a href=" https://wa.me/9597208207"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="https://www.linkedin.com/in/kaviya-dhanraj-937a46256/"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/kaviyadhanraj"><i class="fa-brands fa-instagram"></i></a>
+              <a href="mailto:kaviyadhanraj@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <a href=" https://wa.me/9597208207"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/kaviya-dhanraj-937a46256/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/kaviyadhanraj"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
           </div>
           <div class="contact-right">
@@ -360,10 +377,18 @@
         <div class="footer-right">
           <h3>Follow Me</h3>
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/kaviya-dhanraj-937a46256/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/kaviya-dhanraj"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/kaviyadhanraj"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/9597208207"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/kaviya-dhanraj-937a46256/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/kaviya-dhanraj"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/kaviyadhanraj"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/9597208207"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -431,22 +456,23 @@
       });
     </script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyHYFC3tko0_-OLAT4SYxUu0N_mynqotaD_dCqDT2zU8CXPmIVeN6pRNrydtt1Cd17QHA/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg= document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML="Message successfully sent"
-            setTimeout(function(){
-              msg.innerHTML=""
-            },5000)
-            form.reset()
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyHYFC3tko0_-OLAT4SYxUu0N_mynqotaD_dCqDT2zU8CXPmIVeN6pRNrydtt1Cd17QHA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message successfully sent";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
