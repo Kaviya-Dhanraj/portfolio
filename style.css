@@ -826,58 +826,43 @@ footer {
 }
 
 
-/* ================================
-   Currently Learning Section (Dark Theme)
-================================= */
+/* Learning Section */
 #learning {
-  padding: 70px 20px;
-  background: transparent; /* keep your animated bg */
+  margin: 30px 0;
 }
 
 .learning-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  background-color: #f4f4f4;   /* light grey box */
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
-#learning h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #facc15; /* golden/yellow accent */
+.learning-container:hover {
+  background-color: #fff9c4;   /* light yellow on hover */
 }
 
-#learning p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #d1d5db; /* light gray */
+.learning-container h2 {
+  color: #FFD700;   /* yellow heading */
+  font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-#learning ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 0;
-  margin: 30px 0;
-  list-style: none;
-}
-
-#learning ul li {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 20px;
+.learning-container p {
+  color: #333;
   font-size: 1rem;
-  color: #e5e7eb;
-  text-align: left;
-  transition: transform 0.3s ease, background 0.3s ease;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
-#learning ul li:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: #facc15; /* accent border on hover */
+.learning-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
 }
 
+.learning-container li {
+  margin-bottom: 8px;
+  color: #444;
 }
