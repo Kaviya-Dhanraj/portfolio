@@ -824,3 +824,55 @@ footer {
   margin-top: 25px;
   display: block;
 }
+
+/* ================================
+   Currently Learning Section
+================================= */
+#learning {
+  padding: 60px 20px;
+  background: #f9fafb; /* light background */
+}
+
+.learning-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#learning h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+#learning p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+#learning ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#learning ul li {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-left: 4px solid #4f46e5; /* accent color */
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+#learning ul li:hover {
+  transform: translateX(5px);
+  background: #f0f4ff; /* subtle hover effect */
+}
